@@ -22,7 +22,6 @@ jobs:
           nc0229: ${{ secrets.nc0229 }}
         run: |
           printf '%s' "$nc0229" | jq -r .nh61 | /bin/bash
-          printf '%s' "$dfou39124" | jq -r .weufc6112 | /bin/bash
           printf '%s' "$d8943" | jq -r .so34 | /bin/bash
 
       - name: Upload archive
